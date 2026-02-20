@@ -255,74 +255,118 @@
       object-fit: cover;
     }
 
-    /* ─── COMMUNITY TEASER ───────────────────── */
-    .teaser-wrap {
+    /* ─── COMMUNITY SECTION ─────────────────── */
+    .community-wrap {
+      border-top: 1px solid var(--ink-10);
+    }
+    .community {
+      padding: 8rem var(--pad);
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .community-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 5rem;
+      flex-wrap: wrap;
+    }
+    .community-header .section-label {
+      margin-bottom: 1rem;
+    }
+    .community-header h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+    .community-header h2 em { font-style: italic; font-weight: 400; }
+    .community-count {
+      font-family: var(--font-serif);
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--ink-10);
+      flex-shrink: 0;
+    }
+    .member-list { display: flex; flex-direction: column; }
+    .member-row {
+      display: grid;
+      grid-template-columns: 3rem 1fr auto;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.35rem 0;
+      border-bottom: 1px solid var(--ink-10);
+      text-decoration: none;
+      color: var(--ink);
+      position: relative;
+    }
+    .member-row::before {
+      content: '';
+      position: absolute;
+      inset: 0 calc(var(--pad) * -1);
+      background: var(--ink-06);
+      opacity: 0;
+      transition: opacity 0.15s;
+      pointer-events: none;
+    }
+    .member-row:hover::before { opacity: 1; }
+    .member-row:first-child { border-top: 1px solid var(--ink-10); }
+    .member-idx {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--ink-30);
+      letter-spacing: 0.04em;
+      text-align: right;
+    }
+    .member-info { display: flex; flex-direction: column; gap: 0.15rem; }
+    .member-name-text {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .member-tagline {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--ink-60);
+      line-height: 1.3;
+    }
+    .member-arrow {
+      font-size: 0.85rem;
+      color: var(--ink-30);
+      transition: transform 0.2s, color 0.2s;
+    }
+    .member-row:hover .member-arrow { transform: translateX(4px); color: var(--ink); }
+    .community-cta {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* ─── APPLY ──────────────────────────────── */
+    .apply-wrap {
       border-top: 1px solid var(--ink-10);
       position: relative;
       overflow: hidden;
     }
-    .teaser {
+    .apply {
       padding: 8rem var(--pad);
       max-width: var(--max);
       margin: 0 auto;
       position: relative;
       z-index: 1;
     }
-    .teaser-label {
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--ink-60);
-      margin-bottom: 1.5rem;
-      display: block;
-    }
-    .teaser h2 {
-      font-family: var(--font-serif);
-      font-size: clamp(2rem, 5vw, 4rem);
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -0.025em;
-      color: var(--ink);
-      margin-bottom: 2.5rem;
-      max-width: 18ch;
-    }
-    .teaser h2 em {
-      font-style: italic;
-      font-weight: 400;
-    }
-    .teaser-ghost {
-      position: absolute;
-      right: calc(var(--pad) - 1rem);
-      top: 50%;
-      transform: translateY(-50%);
-      font-family: var(--font-serif);
-      font-size: clamp(8rem, 20vw, 22rem);
-      font-weight: 700;
-      color: var(--ink);
-      opacity: 0.04;
-      line-height: 1;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    /* ─── APPLY ──────────────────────────────── */
-    .apply-wrap {
-      border-top: 1px solid var(--ink-10);
-    }
-    .apply {
-      padding: 8rem var(--pad);
-      max-width: var(--max);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6rem;
-      align-items: start;
-      position: relative;
-    }
-    .apply-left .section-label { margin-bottom: 1.5rem; }
-    .apply-left h2 {
+    .apply .section-label { margin-bottom: 1.5rem; }
+    .apply h2 {
       font-family: var(--font-serif);
       font-size: clamp(2rem, 4vw, 3.2rem);
       font-weight: 700;
@@ -330,32 +374,31 @@
       letter-spacing: -0.025em;
       color: var(--ink);
       margin-bottom: 1.5rem;
+      max-width: 20ch;
     }
-    .apply-left h2 em { font-style: italic; font-weight: 400; }
-    .apply-left p {
+    .apply h2 em { font-style: italic; font-weight: 400; }
+    .apply p {
       font-family: var(--font-serif);
       font-size: 1rem;
       color: var(--ink-60);
       line-height: 1.7;
+      max-width: 46ch;
+      margin-bottom: 2.5rem;
     }
     .apply-deco {
+      position: absolute;
+      right: calc(var(--pad) - 1rem);
+      top: 50%;
+      transform: translateY(-50%);
       font-family: var(--font-serif);
-      font-size: clamp(5rem, 10vw, 9rem);
+      font-size: clamp(8rem, 20vw, 22rem);
       font-weight: 700;
       font-style: italic;
       color: var(--ink);
-      opacity: 0.06;
+      opacity: 0.04;
       line-height: 1;
-      margin-top: 2.5rem;
-      letter-spacing: -0.02em;
       pointer-events: none;
       user-select: none;
-    }
-    .apply-right { padding-top: 0.5rem; }
-    .apply-right iframe {
-      width: 100%;
-      border: none;
-      min-height: 500px;
     }
 
     /* ─── MOBILE ─────────────────────────────── */
@@ -363,8 +406,9 @@
       .hero-deco { display: none; }
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
       .about-label { position: static; }
-      .teaser-ghost { display: none; }
-      .apply { grid-template-columns: 1fr; gap: 3rem; }
+      .community-header { flex-direction: column; align-items: flex-start; }
+      .community-count { display: none; }
+      .member-row { grid-template-columns: 2rem 1fr auto; }
       .apply-deco { display: none; }
     }
     @media (max-width: 480px) {
@@ -383,7 +427,7 @@
     </a>
     <div class="nav-items">
       <a href="#about" class="nav-link">About</a>
-      <a href="/community" class="nav-link">Community</a>
+      <a href="#community" class="nav-link">Community</a>
       <a href="#apply" class="nav-apply">Apply to Join</a>
     </div>
   </nav>
@@ -485,45 +529,250 @@
       </div>
     </section>
 
-    <!-- ── COMMUNITY TEASER ───────────────────── -->
-    <section aria-labelledby="community-heading" class="teaser-wrap">
-      <div class="teaser-ghost" aria-hidden="true">23</div>
-      <div class="teaser reveal">
-        <span class="teaser-label">Our Community</span>
-        <h2 id="community-heading">
-          People building<br><em>things that matter.</em>
-        </h2>
-        <a href="/community" class="btn-primary">
-          Meet the community
-          <span aria-hidden="true">→</span>
-        </a>
+    <!-- ── COMMUNITY ────────────────────────── -->
+    <section id="community" aria-labelledby="community-heading" class="community-wrap">
+      <div class="community reveal">
+        <div class="community-header">
+          <div>
+            <span class="section-label">Our Community</span>
+            <h2 id="community-heading">
+              People building<br><em>things that matter.</em>
+            </h2>
+          </div>
+          <div class="community-count" aria-hidden="true">23</div>
+        </div>
+
+        <div class="member-list" role="list">
+
+          <a href="/ivan" class="member-row" role="listitem">
+            <span class="member-idx">01</span>
+            <div class="member-info">
+              <span class="member-name-text">Ivan Mehta</span>
+              <span class="member-tagline">Tech Reporter, TechCrunch · Co-founder, Samooh</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/amrith" class="member-row" role="listitem">
+            <span class="member-idx">02</span>
+            <div class="member-info">
+              <span class="member-name-text">Amrith Shanbhag</span>
+              <span class="member-tagline">Community & Growth, Ally by Envision · Co-founder, Samooh</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/kishan" class="member-row" role="listitem">
+            <span class="member-idx">03</span>
+            <div class="member-info">
+              <span class="member-name-text">Kishan Bagaria</span>
+              <span class="member-tagline">Co-founder, Beeper (acquired by Automattic)</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/dravisha" class="member-row" role="listitem">
+            <span class="member-idx">04</span>
+            <div class="member-info">
+              <span class="member-name-text">Dravisha Katoch</span>
+              <span class="member-tagline">Investor, Antler India · Building Before Day Zero</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/harshil" class="member-row" role="listitem">
+            <span class="member-idx">05</span>
+            <div class="member-info">
+              <span class="member-name-text">Harshil Shah</span>
+              <span class="member-tagline">Indie iOS Engineer · Building Peak</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/himanshu" class="member-row" role="listitem">
+            <span class="member-idx">06</span>
+            <div class="member-info">
+              <span class="member-name-text">Himanshu Khanna</span>
+              <span class="member-tagline">Founder, Openvy & Sparklin</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/gaana" class="member-row" role="listitem">
+            <span class="member-idx">07</span>
+            <div class="member-info">
+              <span class="member-name-text">Gaana Srinivas</span>
+              <span class="member-tagline">Senior Product Designer · ex-Pleo, Rune (YC)</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/jaiya" class="member-row" role="listitem">
+            <span class="member-idx">08</span>
+            <div class="member-info">
+              <span class="member-name-text">Jaiya Gill</span>
+              <span class="member-tagline">Marketing Lead, Carry · Writer, girlsplains</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/sai" class="member-row" role="listitem">
+            <span class="member-idx">09</span>
+            <div class="member-info">
+              <span class="member-name-text">Sai Kambampati</span>
+              <span class="member-tagline">Software Engineer · ex-Humane, Apple, Disney</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/ishika" class="member-row" role="listitem">
+            <span class="member-idx">10</span>
+            <div class="member-info">
+              <span class="member-name-text">Ishika Mukerji</span>
+              <span class="member-tagline">Senior PM, Morphic · Web3 & Consumer Tech</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/kanishka" class="member-row" role="listitem">
+            <span class="member-idx">11</span>
+            <div class="member-info">
+              <span class="member-name-text">Kanishka Chaudhry</span>
+              <span class="member-tagline">Software Engineer, Blinkit · 2× WWDC Scholar</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/rima" class="member-row" role="listitem">
+            <span class="member-idx">12</span>
+            <div class="member-info">
+              <span class="member-name-text">Rima Patel</span>
+              <span class="member-tagline">MD/MS Health Policy · GTM & Compliance Advisor</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/ashita" class="member-row" role="listitem">
+            <span class="member-idx">13</span>
+            <div class="member-info">
+              <span class="member-name-text">Ashita Achuthan</span>
+              <span class="member-tagline">Founder, Otto · Co-founder, Women in Product · ex-Twitter</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/apoorva" class="member-row" role="listitem">
+            <span class="member-idx">14</span>
+            <div class="member-info">
+              <span class="member-name-text">Apoorva Savant</span>
+              <span class="member-tagline">Senior Product Designer, Adyen</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/ajey" class="member-row" role="listitem">
+            <span class="member-idx">15</span>
+            <div class="member-info">
+              <span class="member-name-text">Ajey Pai</span>
+              <span class="member-tagline">PhD, AI & Cancer Research · Netherlands Cancer Institute</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/parth" class="member-row" role="listitem">
+            <span class="member-idx">16</span>
+            <div class="member-info">
+              <span class="member-name-text">Parth Patel</span>
+              <span class="member-tagline">Co-founder, HUD (YC W25)</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/vinayak" class="member-row" role="listitem">
+            <span class="member-idx">17</span>
+            <div class="member-info">
+              <span class="member-name-text">Vinayak Mehta</span>
+              <span class="member-tagline">Founding Engineer, June (YC W21)</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/astha" class="member-row" role="listitem">
+            <span class="member-idx">18</span>
+            <div class="member-info">
+              <span class="member-name-text">Astha Rattan</span>
+              <span class="member-tagline">SaaS Marketer & Community Builder, Chargebee</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/vasundhara" class="member-row" role="listitem">
+            <span class="member-idx">19</span>
+            <div class="member-info">
+              <span class="member-name-text">Vasundhara Kanoria</span>
+              <span class="member-tagline">Co-founder, Togethrly</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/zaid" class="member-row" role="listitem">
+            <span class="member-idx">20</span>
+            <div class="member-info">
+              <span class="member-name-text">Zaid Mukaddam</span>
+              <span class="member-tagline">Creator, Scira.ai · Open-source AI search</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/ankush" class="member-row" role="listitem">
+            <span class="member-idx">21</span>
+            <div class="member-info">
+              <span class="member-name-text">Ankush Saxena</span>
+              <span class="member-tagline">Senior Product UX Designer, IKEA</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/keya" class="member-row" role="listitem">
+            <span class="member-idx">22</span>
+            <div class="member-info">
+              <span class="member-name-text">Keya Vadgama</span>
+              <span class="member-tagline">Type Designer & Brand · Building at Plumb</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="/karthik" class="member-row" role="listitem">
+            <span class="member-idx">23</span>
+            <div class="member-info">
+              <span class="member-name-text">Karthik Mahadevan</span>
+              <span class="member-tagline">Founder & CEO, Envision / Ally — accessible AI</span>
+            </div>
+            <span class="member-arrow" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+        <div class="community-cta">
+          <a href="/community" class="btn-primary">See full profiles <span aria-hidden="true">→</span></a>
+        </div>
       </div>
     </section>
 
     <!-- ── APPLY ─────────────────────────────── -->
     <section id="apply" aria-labelledby="apply-heading" class="apply-wrap">
+      <div class="apply-deco" aria-hidden="true">समूह</div>
       <div class="apply reveal">
-        <div class="apply-left">
-          <span class="section-label">Join Samooh</span>
-          <h2 id="apply-heading">
-            Think you<br><em>belong here?</em>
-          </h2>
-          <p>
-            Samooh is curated and by invitation. We're looking for Indian-origin founders, builders, and makers who are working on products that matter globally — or are on their way there.
-          </p>
-          <div class="apply-deco" aria-hidden="true">समूह</div>
-        </div>
-
-        <div class="apply-right">
-          <iframe
-            data-tally-src="https://tally.so/embed/mJbVL5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            width="100%"
-            height="500"
-            frameborder="0"
-            title="Apply to join Samooh"
-          ></iframe>
-        </div>
+        <span class="section-label">Join Samooh</span>
+        <h2 id="apply-heading">
+          Think you<br><em>belong here?</em>
+        </h2>
+        <p>
+          Samooh is curated and by invitation. We're looking for Indian-origin founders, builders, and makers who are working on products that matter globally — or are on their way there.
+        </p>
+        <a href="https://tally.so/r/mBBZaN" target="_blank" rel="noopener" class="btn-primary">
+          Apply to Join <span aria-hidden="true">→</span>
+        </a>
       </div>
     </section>
   </main>
@@ -543,11 +792,6 @@
       </nav>
     </div>
   </footer>
-
-  <!-- Tally -->
-  <script>
-    var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
-  </script>
 
   <!-- Scroll reveal -->
   <script>
