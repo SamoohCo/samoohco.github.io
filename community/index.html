@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community — Samooh</title>
+  <meta name="description" content="Meet the Samooh community — 23 Indian-origin founders, makers, and builders working on global products.">
+  <meta property="og:title" content="Community — Samooh">
+  <meta property="og:description" content="23 Indian-origin founders, makers, and builders working on global products.">
+  <meta property="og:url" content="https://samooh.co/community">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@samoohco">
+  <link rel="canonical" href="https://samooh.co/community">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/shared.css">
+
+  <style>
+    /* ─── PAGE HERO ──────────────────────────── */
+    .page-hero {
+      padding: calc(64px + 5rem) var(--pad) 4rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .page-hero-label {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-60);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .page-hero-label::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--ink-30);
+    }
+    .page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+      max-width: 22ch;
+    }
+    .page-hero h1 em {
+      font-style: italic;
+      font-weight: 400;
+    }
+    .page-hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .member-count {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      color: var(--ink-30);
+    }
+
+    /* ─── GALLERY ────────────────────────────── */
+    .gallery-section {
+      border-top: 1px solid var(--ink-10);
+      padding: 4rem var(--pad) 6rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+    .gallery-cell {
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+      aspect-ratio: 1;
+      background: var(--card);
+    }
+    .gallery-cell a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .gallery-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .gallery-cell:hover img {
+      transform: scale(1.03);
+    }
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.25rem 1rem 1rem;
+      background: linear-gradient(to top, rgba(24,27,32,0.88) 0%, rgba(24,27,32,0) 100%);
+      transform: translateY(100%);
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .gallery-cell:hover .gallery-overlay {
+      transform: translateY(0);
+    }
+    .gallery-member-name {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #FFEBA3;
+      display: block;
+      line-height: 1.2;
+    }
+    .gallery-member-role {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: rgba(255,235,163,0.65);
+      display: block;
+      margin-top: 0.2rem;
+      line-height: 1.4;
+    }
+
+    /* ─── CTA ────────────────────────────────── */
+    .gallery-cta {
+      border-top: 1px solid var(--ink-10);
+      padding: 5rem var(--pad);
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .gallery-cta p {
+      font-family: var(--font-serif);
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-style: italic;
+      color: var(--ink-60);
+      line-height: 1.3;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────── */
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-overlay { transform: translateY(0); }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────── -->
+  <nav class="nav" role="navigation">
+    <a href="/" class="nav-logo">
+      Samooh
+      <span class="nav-logo-devanagari">समूह</span>
+    </a>
+    <div class="nav-items">
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/community" class="nav-link">Community</a>
+      <a href="/#apply" class="nav-apply">Apply to Join</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── PAGE HERO ──────────────────────────── -->
+    <div class="page-hero">
+      <p class="page-hero-label">Our Community</p>
+      <h1>People building <em>things that matter.</em></h1>
+      <div class="page-hero-meta">
+        <span class="member-count">23 members</span>
+        <a href="/#apply" class="btn-primary">Apply to Join <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <!-- ── GALLERY ────────────────────────────── -->
+    <div class="gallery-section">
+      <div class="gallery-grid">
+
+        <div class="gallery-cell">
+          <a href="/ivan">
+            <img src="/assets/images/members/ivan-mehta.png" alt="Ivan Mehta" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Ivan Mehta</span>
+              <span class="gallery-member-role">Tech Reporter, TechCrunch</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/amrith">
+            <img src="/assets/images/members/amrith-shanbhag.png" alt="Amrith Shanbhag" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Amrith Shanbhag</span>
+              <span class="gallery-member-role">Community & Growth, Ally by Envision</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/kishan">
+            <img src="/assets/images/members/kishan-bagaria.png" alt="Kishan Bagaria" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Kishan Bagaria</span>
+              <span class="gallery-member-role">Co-founder, Beeper (acq. by Automattic)</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/dravisha">
+            <img src="/assets/images/members/dravisha-katoch.png" alt="Dravisha Katoch" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Dravisha Katoch</span>
+              <span class="gallery-member-role">Investor, Antler India</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/harshil">
+            <img src="/assets/images/members/harshil-shah.png" alt="Harshil Shah" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Harshil Shah</span>
+              <span class="gallery-member-role">Indie iOS Engineer, building Peak</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/himanshu">
+            <img src="/assets/images/members/himanshu-khanna.png" alt="Himanshu Khanna" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Himanshu Khanna</span>
+              <span class="gallery-member-role">Founder, Openvy & Sparklin</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/gaana">
+            <img src="/assets/images/members/gaana-srinivas.png" alt="Gaana Srinivas" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Gaana Srinivas</span>
+              <span class="gallery-member-role">Senior Product Designer</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/jaiya">
+            <img src="/assets/images/members/jaiya-gill.png" alt="Jaiya Gill" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Jaiya Gill</span>
+              <span class="gallery-member-role">Marketing Lead, Carry</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/sai">
+            <img src="/assets/images/members/sai-kambampati.png" alt="Sai Kambampati" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Sai Kambampati</span>
+              <span class="gallery-member-role">Software Engineer, ex-Humane & Apple</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/ishika">
+            <img src="/assets/images/members/ishika-mukerji.png" alt="Ishika Mukerji" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Ishika Mukerji</span>
+              <span class="gallery-member-role">Senior PM, Morphic</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/kanishka">
+            <img src="/assets/images/members/kanishka-gupta.png" alt="Kanishka Chaudhry" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Kanishka Chaudhry</span>
+              <span class="gallery-member-role">Software Engineer, Blinkit</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/rima">
+            <img src="/assets/images/members/rima-patel.png" alt="Rima Patel" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Rima Patel</span>
+              <span class="gallery-member-role">MD/MS Health Policy, GTM Advisor</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/ashita">
+            <img src="/assets/images/members/ashita-achuthan.png" alt="Ashita Achuthan" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Ashita Achuthan</span>
+              <span class="gallery-member-role">Founder, Otto · ex-Twitter</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/apoorva">
+            <img src="/assets/images/members/apoorva-savant.png" alt="Apoorva Savant" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Apoorva Savant</span>
+              <span class="gallery-member-role">Senior Product Designer, Adyen</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/ajey">
+            <img src="/assets/images/members/ajey-pai.png" alt="Ajey Pai" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Ajey Pai</span>
+              <span class="gallery-member-role">PhD, AI & Cancer Research</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/parth">
+            <img src="/assets/images/members/parth-patel.png" alt="Parth Patel" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Parth Patel</span>
+              <span class="gallery-member-role">Co-founder, HUD (YC W25)</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/vinayak">
+            <img src="/assets/images/members/vinayak-mehta.png" alt="Vinayak Mehta" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Vinayak Mehta</span>
+              <span class="gallery-member-role">Founding Engineer, June (YC W21)</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/astha">
+            <img src="/assets/images/members/astha-rattan.png" alt="Astha Rattan" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Astha Rattan</span>
+              <span class="gallery-member-role">SaaS Marketer & Community Builder</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/vasundhara">
+            <img src="/assets/images/members/vasundhara-kanoria.png" alt="Vasundhara Kanoria" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Vasundhara Kanoria</span>
+              <span class="gallery-member-role">Co-founder, Togethrly</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/zaid">
+            <img src="/assets/images/members/zaid-mukaddam.png" alt="Zaid Mukaddam" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Zaid Mukaddam</span>
+              <span class="gallery-member-role">Creator, Scira.ai</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/ankush">
+            <img src="/assets/images/members/ankush-saxena.png" alt="Ankush Saxena" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Ankush Saxena</span>
+              <span class="gallery-member-role">Senior Product UX Designer, IKEA</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/keya">
+            <img src="/assets/images/members/keya-vadgama.png" alt="Keya Vadgama" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Keya Vadgama</span>
+              <span class="gallery-member-role">Type Designer & Brand, Plumb</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-cell">
+          <a href="/karthik">
+            <img src="/assets/images/members/karthik-mahadevan.png" alt="Karthik Mahadevan" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-member-name">Karthik Mahadevan</span>
+              <span class="gallery-member-role">Founder & CEO, Envision / Ally</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── BOTTOM CTA ─────────────────────────── -->
+    <div class="gallery-cta">
+      <p>Think you belong here?</p>
+      <a href="/#apply" class="btn-primary">Apply to Join <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="footer-wrap" role="contentinfo">
+    <div class="footer">
+      <div class="footer-left">
+        <span class="footer-wordmark">Samooh · समूह</span>
+        <span class="footer-sub">Indian founders building global products</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://x.com/samoohco" target="_blank" rel="noopener" class="footer-link">Twitter</a>
+        <a href="/#about" class="footer-link">About</a>
+        <a href="/community" class="footer-link">Community</a>
+        <a href="/#apply" class="footer-link">Apply</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
