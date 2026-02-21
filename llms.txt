@@ -1,0 +1,70 @@
+# Samooh
+
+> Samooh (समूह) is a curated community for founders, makers, and builders of Indian origin working on world-class products for a global audience.
+
+Samooh — pronounced "sa-moo" — means "a gathering or assembly of people" in Hindi and Sanskrit. It is a private, invitation-only community founded by Ivan Mehta and Amrith Shanbhag. Membership is selective and focused on quality: Samooh brings together Indian-origin founders, engineers, designers, operators, and investors who are building or have built products that matter globally, not just within India.
+
+The community is built on trust and craft. It exists to give Indian-origin builders a supportive network of peers who have been through the journey of building global products and are willing to pay it forward.
+
+## What Samooh Is
+
+- A curated, invitation-only community for Indian-origin founders, makers, and builders
+- Focused on people building or scaling world-class products for global audiences
+- Founded by Ivan Mehta (Tech Reporter, TechCrunch) and Amrith Shanbhag (Community & Growth, Ally by Envision)
+- Based online, with members spread across India, the US, Europe, and beyond
+- Not a networking group or directory — a tight-knit peer community
+
+## What Samooh Is Not
+
+- Not open to everyone — membership is curated and by invitation
+- Not India-market focused — members build for global audiences
+- Not a jobs board, investor network, or accelerator
+- Not a Discord or Slack community (private by design)
+
+## How to Apply
+
+Applications are open at https://samooh.co/apply. Samooh is looking for Indian-origin founders, builders, and makers who are working on products that matter globally — or are clearly on their way there.
+
+## Members
+
+Samooh currently has 23 members. Each member has a public profile page at https://samooh.co/{first-name}.
+
+### Founders of Samooh
+
+- **Ivan Mehta** — Tech Reporter at TechCrunch covering global consumer tech; previously at The Next Web and Huffington Post; based in India. https://samooh.co/ivan
+- **Amrith Shanbhag** — Community & Growth at Ally by Envision; previously led community and social at Product Hunt; worked with Opal, Stoic, and other consumer startups; based in Amsterdam. https://samooh.co/amrith
+
+### Full Member List
+
+- **Kishan Bagaria** — Co-founder of Beeper (acquired by Automattic), an all-in-one messenger consolidating iMessage, WhatsApp, Telegram, Signal, Discord, and Slack. https://samooh.co/kishan
+- **Dravisha Katoch** — Storyteller, community builder, and investor at Antler India; building Before Day Zero; expertise in healthtech, sports tech, and consumer fintech. https://samooh.co/dravisha
+- **Harshil Shah** — Indie iOS engineer; built Pause, Stopwatch, and RIFF; currently building Peak, a personal fitness dashboard. https://samooh.co/harshil
+- **Himanshu Khanna** — Founder of Openvy (a creative network for pop culture) and Sparklin (one of India's leading design agencies). https://samooh.co/himanshu
+- **Gaana Srinivas** — Senior product designer; previously at Pleo, Rune (YC), Amazon, and GOODIEBOX; also an illustrator and photographer. https://samooh.co/gaana
+- **Jaiya Gill** — Marketing Lead at Carry; writes the girlsplains newsletter at the intersection of startups, tech, money, and pop culture; previously worked on MrBeast's TikTok strategy. https://samooh.co/jaiya
+- **Sai Kambampati** — Founder of Second Nature Computing; previously at Humane working on the Ai Pin interaction model; 3× WWDC Scholar; interned at Apple and Disney. https://samooh.co/sai
+- **Ishika Mukerji** — Senior PM at Morphic leading product and BD; runs a podcast on Base and Farcaster; background in electrical/computer engineering at Rutgers. https://samooh.co/ishika
+- **Kanishka Chaudhry** — Software engineer at Upstox; 2× WWDC Scholar; previously at Structured and Blinkit; led a Hack Club at her high school. https://samooh.co/kanishka
+- **Rima Patel** — MD/MS in Health Policy; advises early-stage startups, clinician entrepreneurs, and creators on GTM and compliance; global consulting experience across the US, LATAM, and India. https://samooh.co/rima
+- **Ashita Achuthan** — Founder of Otto (an AI biographer); built Fantoons (AI-powered fan-fiction comics); co-founder of Women in Product; previously in product at Twitter, Amazon, and eBay. https://samooh.co/ashita
+- **Apoorva Savant** — Senior product designer at Adyen; BITS Pilani and IIT Bombay IDC alumna; previously designed an eye-tracking interface for ALS patients. https://samooh.co/apoorva
+- **Ajey Pai** — PhD candidate at Netherlands Cancer Institute and University of Amsterdam; building Epistemic Tools; developed AI algorithms for gastrointestinal disease detection at IIT Delhi. https://samooh.co/ajey
+- **Parth Patel** — Co-founder of HUD (YC W25), an evaluation platform for Computer Use Agents; previously worked on AI/NLP, fintech, healthtech, and nuclear reactors. https://samooh.co/parth
+- **Vinayak Mehta** — Staff engineer at Clarify; open-source contributor and speaker; previously at June (YC W21), Grofers, and SocialCops; based in Paris. https://samooh.co/vinayak
+- **Astha Rattan** — Building Relay at Chargebee, a community for SaaS founders and operators; experienced across growth, product marketing, and community. https://samooh.co/astha
+- **Vasundhara Kanoria** — Co-founder of Togethrly, an app for couples in long-distance relationships; lawyer and social scientist; UN experience; Ashoka Young India Fellow. https://samooh.co/vasundhara
+- **Zaid Mukaddam** — Creator of Scira, an open-source AI search engine sponsored by Vercel and xAI; indie developer focused on UX and generative AI. https://samooh.co/zaid
+- **Ankush Saxena** — Senior product UX designer at IKEA; previously at Tide, GoIbibo/MakeMyTrip, and Directi; co-founder of Broke Bibliophiles Bombay. https://samooh.co/ankush
+- **Keya Vadgama** — Designer specializing in South Asian script typefaces and custom logotypes; released her first font Mango (a love letter to Gujarati script); previously at Plumb. https://samooh.co/keya
+- **Karthik Mahadevan** — Founder and CEO of Envision; builds accessibility tools including Ally for people who are blind or have low vision; product design background from Delft University of Technology. https://samooh.co/karthik
+
+## Site Pages
+
+- Homepage: https://samooh.co
+- Community directory: https://samooh.co/community
+- Apply to join: https://samooh.co/apply
+- Member profiles: https://samooh.co/{first-name} (one per member)
+
+## Social
+
+- Twitter / X: https://x.com/samoohco

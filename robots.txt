@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://samooh.co/sitemap.xml
+LLMs: https://samooh.co/llms.txt
