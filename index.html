@@ -416,6 +416,55 @@
       .about-content h2 { font-size: 1.5rem; }
     }
   </style>
+  <meta name="robots" content="index, follow">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M98ZNZMY9S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M98ZNZMY9S');
+  </script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://samooh.co/#organization",
+        "name": "Samooh",
+        "alternateName": "समूह",
+        "url": "https://samooh.co",
+        "logo": "https://samooh.co/assets/images/samooh.png",
+        "image": "https://samooh.co/assets/images/samooh.png",
+        "description": "A curated community for founders, makers, and builders of Indian origin working on world-class products for a global audience.",
+        "sameAs": ["https://x.com/samoohco"],
+        "founder": [
+          { "@type": "Person", "name": "Ivan Mehta", "url": "https://samooh.co/ivan" },
+          { "@type": "Person", "name": "Amrith Shanbhag", "url": "https://samooh.co/amrith" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://samooh.co/#website",
+        "url": "https://samooh.co",
+        "name": "Samooh",
+        "description": "A curated community for founders, makers, and builders of Indian origin working on world-class products for a global audience.",
+        "publisher": { "@id": "https://samooh.co/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://samooh.co/#webpage",
+        "url": "https://samooh.co",
+        "name": "Samooh — Indian Founders Building Global Products",
+        "description": "A curated community for founders, makers, and builders of Indian origin working on world-class products for a global audience.",
+        "isPartOf": { "@id": "https://samooh.co/#website" },
+        "about": { "@id": "https://samooh.co/#organization" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
