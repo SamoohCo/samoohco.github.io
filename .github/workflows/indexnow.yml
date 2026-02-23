@@ -1,0 +1,33 @@
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Submit URLs to IndexNow
+        run: |
+          python3 -c "
+          import xml.etree.ElementTree as ET, json, urllib.request
+          tree = ET.parse('sitemap.xml')
+          ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          urls = [u.text for u in tree.findall('.//s:loc', ns)]
+          payload = json.dumps({
+            'host': 'samooh.co',
+            'key': 'f3128e4b767d07970c01ca21d80063db25824064184067beb3de8fdc51fddd05',
+            'keyLocation': 'https://samooh.co/f3128e4b767d07970c01ca21d80063db25824064184067beb3de8fdc51fddd05.txt',
+            'urlList': urls
+          }).encode()
+          req = urllib.request.Request(
+            'https://api.indexnow.org/indexnow',
+            data=payload,
+            headers={'Content-Type': 'application/json'}
+          )
+          resp = urllib.request.urlopen(req)
+          print('IndexNow response:', resp.status)
+          "
