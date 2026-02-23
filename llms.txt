@@ -27,7 +27,7 @@ Applications are open at https://samooh.co/apply. Samooh is looking for Indian-o
 
 ## Members
 
-Samooh currently has 23 members. Each member has a public profile page at https://samooh.co/{first-name}.
+Samooh currently has 24 members. Each member has a public profile page at https://samooh.co/{first-name}.
 
 ### Founders of Samooh
 
@@ -57,6 +57,7 @@ Samooh currently has 23 members. Each member has a public profile page at https:
 - **Ankush Saxena** — Senior product UX designer at IKEA; previously at Tide, GoIbibo/MakeMyTrip, and Directi; co-founder of Broke Bibliophiles Bombay. https://samooh.co/ankush
 - **Keya Vadgama** — Designer specializing in South Asian script typefaces and custom logotypes; released her first font Mango (a love letter to Gujarati script); previously at Plumb. https://samooh.co/keya
 - **Karthik Mahadevan** — Founder and CEO of Envision; builds accessibility tools including Ally for people who are blind or have low vision; product design background from Delft University of Technology. https://samooh.co/karthik
+- **Kunal Bhatia** — Product designer who breaks down complex systems to build better experiences; has built fintech, consumer, and healthcare products at Mercury, Finta, ZeroCarbonMA, GE Healthcare, and DocBox; based between Boston and New York City. https://samooh.co/kunal
 
 ## Site Pages
 
