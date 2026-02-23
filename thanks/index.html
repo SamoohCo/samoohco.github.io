@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks for Applying — Samooh</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/shared.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M98ZNZMY9S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M98ZNZMY9S');
+  </script>
+  <style>
+    .thanks-wrap {
+      min-height: calc(100svh - 64px);
+      display: flex;
+      align-items: center;
+      padding: 6rem var(--pad);
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .thanks-body {
+      max-width: 38ch;
+    }
+    .thanks-body .section-label {
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: reveal 0.9s var(--ease-out) 0.1s forwards;
+    }
+    .thanks-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.2s forwards;
+    }
+    .thanks-heading em {
+      font-style: italic;
+      font-weight: 400;
+    }
+    .thanks-sub {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--ink-60);
+      line-height: 1.7;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.35s forwards;
+    }
+    .thanks-follow {
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.5s forwards;
+    }
+    .thanks-follow-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-30);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .thanks-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .thanks-home {
+      margin-top: 4rem;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.65s forwards;
+    }
+    .thanks-home a {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--ink-30);
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .thanks-home a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <nav class="nav" role="navigation">
+    <a href="/" class="nav-logo">Samooh <span class="nav-logo-devanagari">समूह</span></a>
+    <div class="nav-items">
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/community" class="nav-link">Community</a>
+      <a href="/#apply" class="nav-apply">Apply to Join</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="thanks-wrap">
+      <div class="thanks-body">
+        <span class="section-label">Application received</span>
+        <h1 class="thanks-heading">
+          Thank you<br>for <em>applying.</em>
+        </h1>
+        <p class="thanks-sub">
+          We'll review your application and be in touch.<br>Good luck building.
+        </p>
+        <div class="thanks-follow">
+          <span class="thanks-follow-label">Stay in the loop</span>
+          <div class="thanks-actions">
+            <a href="https://x.com/samoohco" class="btn-primary" target="_blank" rel="noopener">
+              Twitter <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://linkedin.com/company/SamoohCo" class="btn-ghost" target="_blank" rel="noopener">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="thanks-home">
+          <a href="/">← Back to Samooh</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-wrap" role="contentinfo">
+    <div class="footer">
+      <div class="footer-left">
+        <span class="footer-wordmark">Samooh · समूह</span>
+        <span class="footer-sub">Indian founders building global products</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://x.com/samoohco" target="_blank" rel="noopener" class="footer-link">Twitter</a>
+        <a href="https://linkedin.com/company/SamoohCo" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="/#about" class="footer-link">About</a>
+        <a href="/community" class="footer-link">Community</a>
+        <a href="/apply" class="footer-link">Apply</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
