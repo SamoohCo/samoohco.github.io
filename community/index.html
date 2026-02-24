@@ -137,24 +137,45 @@
       line-height: 1.4;
     }
 
+    /* ─── INTRO ──────────────────────────────── */
+    .community-intro {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--ink-60);
+      line-height: 1.8;
+      max-width: 52ch;
+      margin-top: 2.5rem;
+    }
+
     /* ─── CTA ────────────────────────────────── */
     .gallery-cta {
       border-top: 1px solid var(--ink-10);
-      padding: 5rem var(--pad);
+      padding: 6rem var(--pad);
       max-width: var(--max);
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-      flex-wrap: wrap;
     }
-    .gallery-cta p {
+    .gallery-cta-heading {
       font-family: var(--font-serif);
-      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.022em;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      max-width: 34ch;
+    }
+    .gallery-cta-heading em {
+      font-style: italic;
+      font-weight: 400;
+    }
+    .gallery-cta-body {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
       font-style: italic;
       color: var(--ink-60);
-      line-height: 1.3;
+      line-height: 1.8;
+      max-width: 50ch;
+      margin-bottom: 3rem;
     }
 
     /* ─── RESPONSIVE ─────────────────────────── */
@@ -254,8 +275,8 @@
       <h1>People building <em>things that matter.</em></h1>
       <div class="page-hero-meta">
         <span class="member-count">24 members</span>
-        <a href="/#apply" class="btn-primary">Apply to Join <span aria-hidden="true">→</span></a>
       </div>
+      <p class="community-intro">Samooh isn't just for engineers. The community includes founders, investors, designers, researchers, product managers, doctors, writers, and makers — all Indian-origin, all building something they care about. Some are at startups you've heard of. Others are building quietly. What they share isn't a credential. It's ambition.</p>
     </div>
 
     <!-- ── GALLERY ────────────────────────────── -->
@@ -507,8 +528,9 @@
 
     <!-- ── BOTTOM CTA ─────────────────────────── -->
     <div class="gallery-cta">
-      <p>Think you belong here?</p>
-      <a href="/apply" target="_blank" rel="noopener" class="btn-primary">Apply to Join <span aria-hidden="true">→</span></a>
+      <h2 class="gallery-cta-heading">The world is starting to notice what <em>Indian builders</em> are capable of.</h2>
+      <p class="gallery-cta-body">Samooh exists to be the proof — not through claims, but through the people in it and the things they build. We're looking for ambitious makers across every discipline and every city. If India is part of your story and you're serious about your craft, there's a place for you here. We want Samooh to be the first thing anyone points to when asked what's coming out of India — and that's only possible if the best builders are in it.</p>
+      <a href="/apply" class="btn-primary">Apply to Join <span aria-hidden="true">→</span></a>
     </div>
   </main>
 
