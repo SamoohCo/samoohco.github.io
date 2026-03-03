@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found · Samooh</title>
+  <meta name="description" content="This page doesn't exist — but the community does.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/shared.css">
+
+  <style>
+    .error-page {
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding-top: 64px;
+    }
+
+    .error-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .error-body {
+      padding: 6rem var(--pad) 4rem;
+      max-width: var(--max);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .error-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-60);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0;
+      animation: reveal 0.9s var(--ease-out) 0.1s forwards;
+    }
+    .error-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--ink-30);
+    }
+
+    .error-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.6rem, 6.5vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      max-width: 18ch;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.25s forwards;
+    }
+    .error-headline em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .error-sub {
+      font-family: var(--font-serif);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-style: italic;
+      color: var(--ink-60);
+      line-height: 1.65;
+      max-width: 46ch;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.4s forwards;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.55s forwards;
+    }
+
+    .error-deco {
+      position: absolute;
+      right: var(--pad);
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--font-serif);
+      font-size: clamp(10rem, 22vw, 26rem);
+      font-weight: 700;
+      font-style: italic;
+      color: var(--ink);
+      opacity: 0.04;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.03em;
+    }
+
+    .error-divider {
+      border-top: 1px solid var(--ink-10);
+      padding: 1rem var(--pad);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      opacity: 0;
+      animation: reveal 1s var(--ease-out) 0.9s forwards;
+    }
+
+    .error-divider-text {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-30);
+    }
+
+    @media (max-width: 768px) {
+      .error-deco { display: none; }
+    }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M98ZNZMY9S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M98ZNZMY9S');
+  </script>
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────── -->
+  <nav class="nav" role="navigation">
+    <a href="/" class="nav-logo">
+      Samooh
+      <span class="nav-logo-devanagari">समूह</span>
+    </a>
+    <div class="nav-items">
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/community" class="nav-link">Community</a>
+      <a href="/apply" class="nav-apply">Apply to Join</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="error-page">
+      <div class="error-wrap">
+        <div class="error-body">
+          <p class="error-eyebrow">समूह — Error 404</p>
+
+          <h1 class="error-headline">
+            This page is still<br>
+            <em>in stealth mode.</em>
+          </h1>
+
+          <p class="error-sub">
+            Some of the best things on the internet haven't launched yet.
+            This page is one of them. Head back home — or if you've been
+            thinking about applying to Samooh, maybe you landed here for a reason.
+          </p>
+
+          <div class="error-actions">
+            <a href="/" class="btn-primary">
+              Back to home
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="/apply" class="btn-ghost">Apply to join</a>
+          </div>
+        </div>
+
+        <div class="error-deco" aria-hidden="true">404</div>
+      </div>
+
+      <div class="error-divider" aria-hidden="true">
+        <span class="error-divider-text">samooh.co · Indian founders building global products</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer class="footer-wrap" role="contentinfo">
+    <div class="footer">
+      <div class="footer-left">
+        <span class="footer-wordmark">Samooh · समूह</span>
+        <span class="footer-sub">Indian founders building global products</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://x.com/samoohco" target="_blank" rel="noopener" class="footer-link">Twitter</a>
+        <a href="https://linkedin.com/company/SamoohCo" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="/#about" class="footer-link">About</a>
+        <a href="/community" class="footer-link">Community</a>
+        <a href="/apply" class="footer-link">Apply</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
