@@ -18,9 +18,9 @@ jobs:
           ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
           urls = [u.text for u in tree.findall('.//s:loc', ns)]
           payload = json.dumps({
-            'host': 'samooh.co',
+            'host': 'samooh.com',
             'key': 'f3128e4b767d07970c01ca21d80063db25824064184067beb3de8fdc51fddd05',
-            'keyLocation': 'https://samooh.co/f3128e4b767d07970c01ca21d80063db25824064184067beb3de8fdc51fddd05.txt',
+            'keyLocation': 'https://samooh.com/f3128e4b767d07970c01ca21d80063db25824064184067beb3de8fdc51fddd05.txt',
             'urlList': urls
           }).encode()
           req = urllib.request.Request(

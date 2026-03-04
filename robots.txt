@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://samooh.co/sitemap.xml
-LLMs: https://samooh.co/llms.txt
+Sitemap: https://samooh.com/sitemap.xml
+LLMs: https://samooh.com/llms.txt
