@@ -59,6 +59,8 @@ Samooh currently has 25 members. Each member has a public profile page at https:
 - **Karthik Mahadevan** — Founder and CEO of Envision; builds accessibility tools including Ally for people who are blind or have low vision; product design background from Delft University of Technology. https://samooh.com/karthik
 - **Kunal Bhatia** — Product designer who breaks down complex systems to build better experiences; has built fintech, consumer, and healthcare products at Mercury, Finta, ZeroCarbonMA, GE Healthcare, and DocBox; based between Boston and New York City. https://samooh.com/kunal
 - **Ishit Jain** — Co-founder of Sellerity, an AI-powered platform that transforms how sales teams train and perform; formerly a Senior Software Engineer at Google and Nutanix. https://samooh.com/ishit
+- **Vidyadhar Sharma** — Full-stack builder and 2X founder on the founding product team at a stealth startup working on AI-native professional networking; previously Head of Product & Growth at Simpl, India's largest BNPL app; has been building startups since 2012. https://samooh.com/vidyadhar
+- **Ankit Kumar** — Solo builder working in consumer crypto; previously led growth at Buy Me a Coffee and was part of the founding team at Gigabrain; his side projects have been used by over a million people. https://samooh.com/ankit
 
 ## Site Pages
 

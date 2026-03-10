@@ -169,4 +169,16 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://samooh.com/vidyadhar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://samooh.com/ankit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
