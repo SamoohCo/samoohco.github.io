@@ -27,7 +27,7 @@ Applications are open at https://samooh.com/apply. Samooh is looking for Indian-
 
 ## Members
 
-Samooh currently has 29 members. Each member has a public profile page at https://samooh.com/{first-name}.
+Samooh currently has 28 members. Each member has a public profile page at https://samooh.com/{first-name}.
 
 ### Founders of Samooh
 
@@ -46,7 +46,6 @@ Samooh currently has 29 members. Each member has a public profile page at https:
 - **Ishika Mukerji** — Senior PM at Morphic leading product and BD; runs a podcast on Base and Farcaster; background in electrical/computer engineering at Rutgers. https://samooh.com/ishika
 - **Kanishka Chaudhry** — Software engineer at Upstox; 2× WWDC Scholar; previously at Structured and Blinkit; led a Hack Club at her high school. https://samooh.com/kanishka
 - **Rima Patel** — MD/MS in Health Policy; advises early-stage startups, clinician entrepreneurs, and creators on GTM and compliance; global consulting experience across the US, LATAM, and India. https://samooh.com/rima
-- **Ashita Achuthan** — Founder of Otto (an AI biographer); built Fantoons (AI-powered fan-fiction comics); co-founder of Women in Product; previously in product at Twitter, Amazon, and eBay. https://samooh.com/ashita
 - **Apoorva Savant** — Senior product designer at Adyen; BITS Pilani and IIT Bombay IDC alumna; previously designed an eye-tracking interface for ALS patients. https://samooh.com/apoorva
 - **Ajey Pai** — PhD candidate at Netherlands Cancer Institute and University of Amsterdam; building Epistemic Tools; developed AI algorithms for gastrointestinal disease detection at IIT Delhi. https://samooh.com/ajey
 - **Parth Patel** — Co-founder of HUD (YC W25), an evaluation platform for Computer Use Agents; previously worked on AI/NLP, fintech, healthtech, and nuclear reactors. https://samooh.com/parth
