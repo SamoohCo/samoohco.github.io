@@ -27,7 +27,7 @@ Applications are open at https://samooh.com/apply. Samooh is looking for Indian-
 
 ## Members
 
-Samooh currently has 25 members. Each member has a public profile page at https://samooh.com/{first-name}.
+Samooh currently has 28 members. Each member has a public profile page at https://samooh.com/{first-name}.
 
 ### Founders of Samooh
 
@@ -61,6 +61,7 @@ Samooh currently has 25 members. Each member has a public profile page at https:
 - **Ishit Jain** — Co-founder of Sellerity, an AI-powered platform that transforms how sales teams train and perform; formerly a Senior Software Engineer at Google and Nutanix. https://samooh.com/ishit
 - **Vidyadhar Sharma** — Full-stack builder and 2X founder on the founding product team at a stealth startup working on AI-native professional networking; previously Head of Product & Growth at Simpl, India's largest BNPL app; has been building startups since 2012. https://samooh.com/vidyadhar
 - **Ankit Kumar** — Solo builder working in consumer crypto; previously led growth at Buy Me a Coffee and was part of the founding team at Gigabrain; his side projects have been used by over a million people. https://samooh.com/ankit
+- **Neil Agarwal** — Founder building Refix Prism, an AI growth strategist that connects analytics, product, and marketing data to surface revenue opportunities for product and consumer teams; previously at Headout and Rocket.Chat (GSoC); founded halogenOS, an Android distro with a global community of thousands of users. https://samooh.com/neil
 
 ## Site Pages
 
